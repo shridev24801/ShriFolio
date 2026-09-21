@@ -1,51 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>Portfolio - Shri Portfolio</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
+  <title>Projects - Shrirevathi S</title>
+  <meta content="Portfolio of Shrirevathi S — Full Stack Developer specializing in Laravel, Node.js, React, and AI-powered applications." name="description">
   <link href="assets/img/favicon.ico" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Kelly
-  * Template URL: https://bootstrapmade.com/kelly-free-bootstrap-cv-resume-html-template/
-  * Updated: Mar 17 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <style>
+    /* Portfolio card hover polish */
+    .portfolio-wrap .portfolio-info {
+      background: linear-gradient(135deg, rgba(20,157,221,0.95), rgba(13,110,253,0.95));
+    }
+    .portfolio-wrap .portfolio-info h4 {
+      font-size: 17px;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+    .portfolio-wrap .portfolio-info p {
+      font-size: 12.5px;
+      margin-bottom: 4px;
+      color: #f1f1f1;
+    }
+    .portfolio-wrap .portfolio-info p em {
+      color: #ffd166;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 12px;
+    }
+    .portfolio-wrap img {
+      transition: transform 0.4s ease;
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+    }
+    .portfolio-wrap:hover img {
+      transform: scale(1.05);
+    }
+    /* Fix for filenames with special chars */
+    #portfolio-flters li {
+      cursor: pointer;
+      display: inline-block;
+      padding: 8px 18px;
+      margin: 0 5px;
+      font-size: 14px;
+      font-weight: 500;
+      border-radius: 50px;
+      transition: all 0.3s;
+      color: #173b6c;
+      background: #f5f8fd;
+    }
+    #portfolio-flters li.filter-active,
+    #portfolio-flters li:hover {
+      background: #149ddd;
+      color: #fff;
+    }
+    .disclaimer-box {
+      font-size: 13px;
+      color: #555;
+      text-align: center;
+      font-style: italic;
+      padding: 18px 22px;
+      background: #f5f8fd;
+      border-left: 4px solid #149ddd;
+      border-radius: 8px;
+      line-height: 1.7;
+    }
+  </style>
 </head>
-
 <body>
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
     <div class="container-fluid d-flex justify-content-between align-items-center">
-
       <h1 class="logo me-auto me-lg-0"><a href="index.html">Shri</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -55,30 +92,34 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
+      </nav>
       <div class="header-social-links">
-        <a href="https://github.com/shridev24801" class="github"><i class="bi bi-github"></i></a>
-        <a href="mailto:shridev24801@gmail.com" class="gmail"><i class="bi bi-google"></i></a>
-        <a href="https://www.linkedin.com/in/shrirevathi-s-33525922b" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+        <a href="https://github.com/shridev24801" class="github" target="_blank"><i class="bi bi-github"></i></a>
+        <a href="mailto:pavishri01@gmail.com" class="gmail"><i class="bi bi-google"></i></a>
+        <a href="https://www.linkedin.com/in/shrirevathi-s-33525922b" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></a>
       </div>
-
     </div>
+  </header>
 
-  </header><!-- End Header -->
+  <!-- ======= Page Banner ======= -->
+  <section class="page-banner">
+    <div class="container">
+      <h1>Projects</h1>
+      <p>A showcase of AI-powered platforms, e-commerce solutions, real-time marketplaces, and booking engines I contributed to as part of development teams.</p>
+      <div class="breadcrumb-nav"><a href="index.html">Home</a> / Projects</div>
+    </div>
+  </section>
 
   <main id="main">
-
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio">
+    <section id="portfolio" class="portfolio" style="padding: 70px 0;">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Projects</h2>
-          <p>Explore a showcase of meticulously crafted projects. Each embodies innovative solutions and seamless functionality, designed to meet diverse business needs and elevate user experiences.</p>
-      </div>
-      
+          <h2>My Work</h2>
+          <p>Each project below reflects my hands-on contribution as a developer within a team — from REST API architecture and AI integrations to payment gateways and real-time features.</p>
+        </div>
 
+        <!-- Filter Buttons -->
         <div class="row" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
@@ -89,144 +130,197 @@
           </div>
         </div>
 
+        <!-- Portfolio Grid -->
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
 
+          <!-- 1. Goavito App -->
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/Appgoavito-.png" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/Appgoavito-.png" class="img-fluid" alt="Goavito App" loading="lazy">
               <div class="portfolio-info">
-                <h4>GoavitoApp</h4>
-                <p>Mobile App</p>
+                <h4>Goavito App</h4>
+                <p><em>Role: Laravel Developer @ Sharesoft Technology</em></p>
+                <p>Laravel, Node.js, WebSockets</p>
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/Appgoavito-.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="JustreusedApp"><i class="bx bx-plus"></i></a>
-                  <a href=""><i class="bx bx-link"></i></a>
+                  <a href="assets/img/portfolio/Appgoavito-.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Goavito App"><i class="bx bx-plus"></i></a>
+                  <a href="https://www.goavito.com" target="_blank" rel="noopener"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
           </div>
-        
 
+          <!-- 2. Goavito Website -->
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/GoAvito-Websites.png" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/GoAvito-Websites.png" class="img-fluid" alt="Goavito Website" loading="lazy">
               <div class="portfolio-info">
                 <h4>Goavito</h4>
-                <p>Website</p>
+                <p><em>Role: Laravel Developer @ Sharesoft Technology</em></p>
+                <p>Laravel, Node.js, Firebase</p>
                 <div class="portfolio-links">
                   <a href="assets/img/portfolio/GoAvito-Websites.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Goavito"><i class="bx bx-plus"></i></a>
-                  <a href="https://www.goavito.com" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                  <a href="https://www.goavito.com" target="_blank" rel="noopener"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
           </div>
 
+          <!-- 3. JustReused App -->
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/appjustreused.png" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/appjustreused.png" class="img-fluid" alt="JustReused App" loading="lazy">
               <div class="portfolio-info">
-                <h4>JustreusedApp</h4>
-                <p>Mobile App</p>
+                <h4>JustReused App</h4>
+                <p><em>Role: Laravel Developer @ Sharesoft Technology</em></p>
+                <p>Laravel, REST API</p>
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/appjustreused.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="JustreusedApp"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html"><i class="bx bx-link"></i></a>
+                  <a href="assets/img/portfolio/appjustreused.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="JustReused App"><i class="bx bx-plus"></i></a>
+                  <a href="https://www.justreused.com" target="_blank" rel="noopener"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
           </div>
 
-
+          <!-- 4. Bazari App -->
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/appbazari.png" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/appbazari.png" class="img-fluid" alt="Bazari App" loading="lazy">
               <div class="portfolio-info">
-                <h4>BazariApp</h4>
-                <p>Mobile App</p>
+                <h4>Bazari App</h4>
+                <p><em>Role: Laravel Developer @ Sharesoft Technology</em></p>
+                <p>Laravel, React Native, Stripe</p>
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/appbazari.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="BazariApp"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                  <a href="assets/img/portfolio/appbazari.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Bazari App"><i class="bx bx-plus"></i></a>
+                  <a href="https://demo.goavito.com/bazari/" target="_blank" rel="noopener"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
           </div>
 
+          <!-- 5. JustReused Website (renamed — no paren) -->
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/JustreusedWebsite).png" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/JustreusedWebsite.png" class="img-fluid" alt="JustReused Website" loading="lazy">
               <div class="portfolio-info">
-                <h4>Justreused</h4>
-                <p>Website</p>
+                <h4>JustReused</h4>
+                <p><em>Role: Laravel Developer @ Sharesoft Technology</em></p>
+                <p>Laravel, REST API, MySQL</p>
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/JustreusedWebsite).png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Bazari"><i class="bx bx-plus"></i></a>
-                  <a href="https://www.justreused.com" target="_blank" title="PortfolioDetails"><i class="bx bx-link"></i></a>
+                  <a href="assets/img/portfolio/JustreusedWebsite.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="JustReused"><i class="bx bx-plus"></i></a>
+                  <a href="https://www.justreused.com" target="_blank" rel="noopener"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
           </div>
 
+          <!-- 6. Goavito Real Estate -->
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/Zillow-Website.png" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/Zillow-Website.png" class="img-fluid" alt="Goavito Real Estate" loading="lazy">
               <div class="portfolio-info">
-                <h4>GoavitoRealEstate</h4>
-                <p>Website</p>
+                <h4>Goavito Real Estate</h4>
+                <p><em>Role: Laravel Developer @ Sharesoft Technology</em></p>
+                <p>Laravel, React, MySQL</p>
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/Zillow-Website.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                  <a href="https://demo.goavito.com/zillow/" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                  <a href="assets/img/portfolio/Zillow-Website.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Goavito Real Estate"><i class="bx bx-plus"></i></a>
+                  <a href="https://demo.goavito.com/zillow/" target="_blank" rel="noopener"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
           </div>
 
-         
-
-          
-       
-
+          <!-- 7. DeTodo App (removed empty link) -->
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/detodoapp.png" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/detodoapp.png" class="img-fluid" alt="DeTodo App" loading="lazy">
               <div class="portfolio-info">
-                <h4>DetodoApp</h4>
-                <p>Mobile App</p>
+                <h4>DeTodo App</h4>
+                <p><em>Role: Laravel Developer @ Sharesoft Technology</em></p>
+                <p>Laravel, REST API</p>
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/detodoapp.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                  <a href="assets/img/portfolio/detodoapp.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="DeTodo App"><i class="bx bx-plus"></i></a>
                 </div>
               </div>
             </div>
           </div>
 
-      
+          <!-- 8. Bazari Website -->
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/Bazari-Website.png" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/Bazari-Website.png" class="img-fluid" alt="Bazari Website" loading="lazy">
               <div class="portfolio-info">
                 <h4>Bazari</h4>
-                <p>Website</p>
+                <p><em>Role: Laravel Developer @ Sharesoft Technology</em></p>
+                <p>Laravel, React, Stripe, Redis</p>
                 <div class="portfolio-links">
                   <a href="assets/img/portfolio/Bazari-Website.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Bazari"><i class="bx bx-plus"></i></a>
-                  <a href="https://demo.goavito.com/bazari/" target="_blank" title="PortfolioDetails"><i class="bx bx-link"></i></a>
+                  <a href="https://demo.goavito.com/bazari/" target="_blank" rel="noopener"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
           </div>
 
+        </div><!-- End .portfolio-container -->
+
+        <!-- Disclaimer -->
+        <div class="row mt-5">
+          <div class="col-lg-12">
+            <p class="disclaimer-box mb-0">
+              <strong>Note:</strong> Company projects listed above were developed during my employment at
+              respective organizations. I contributed as part of a development team, and the projects
+              remain the intellectual property of their respective companies. Details are shared only
+              to demonstrate my technical contributions.
+            </p>
+          </div>
         </div>
 
-      </div>
+      </div><!-- End .container -->
     </section><!-- End Portfolio Section -->
-
-  </main><!-- End #main -->
+  </main>
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>Kelly</span></strong>. All Rights Reserved
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <h4>Shrirevathi S</h4>
+          <p>Full Stack Developer | Laravel Engineer | AI Developer with 4+ years of experience building scalable web applications and AI-powered features.</p>
+          <div class="footer-social mt-3">
+            <a href="https://github.com/shridev24801" target="_blank" rel="noopener"><i class="bi bi-github"></i></a>
+            <a href="https://www.linkedin.com/in/shrirevathi-s-33525922b" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i></a>
+            <a href="mailto:pavishri01@gmail.com"><i class="bi bi-google"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 mb-4 footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="portfolio.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 footer-links">
+          <h4>Tech Stack</h4>
+          <ul>
+            <li><a>Laravel &amp; PHP</a></li>
+            <li><a>Node.js &amp; React</a></li>
+            <li><a>MySQL &amp; Redis</a></li>
+            <li><a>OpenAI &amp; Stable Diffusion</a></li>
+            <li><a>WebSockets &amp; Firebase</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 footer-contact">
+          <h4>Contact</h4>
+          <p><i class="bi bi-geo-alt"></i> Madurai, Tamil Nadu, India</p>
+          <p><i class="bi bi-phone"></i> +91 9626242130</p>
+          <p><i class="bi bi-envelope"></i> pavishri01@gmail.com</p>
+        </div>
       </div>
-      
+      <div class="copyright">&copy; Copyright <strong><span>Shrirevathi S</span></strong>. All Rights Reserved</div>
     </div>
-  </footer><!-- End  Footer -->
+  </footer>
 
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
@@ -241,9 +335,28 @@
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
-  <!-- Template Main JS File -->
+  <!-- Main JS -->
   <script src="assets/js/main.js"></script>
 
-</body>
+  <!-- Fix: Re-init Isotope after all images load (prevents slow/hanging) -->
+  <script>
+    window.addEventListener('load', function () {
+      var container = document.querySelector('.portfolio-container');
+      if (container && typeof Isotope !== 'undefined') {
+        var iso = new Isotope(container, { itemSelector: '.portfolio-item' });
+        var flters = document.querySelectorAll('#portfolio-flters li');
+        flters.forEach(function (el) {
+          el.addEventListener('click', function (e) {
+            e.preventDefault();
+            flters.forEach(function (f) { f.classList.remove('filter-active'); });
+            this.classList.add('filter-active');
+            iso.arrange({ filter: this.getAttribute('data-filter') });
+            if (typeof AOS !== 'undefined') AOS.refresh();
+          });
+        });
+      }
+    });
+  </script>
 
+</body>
 </html>

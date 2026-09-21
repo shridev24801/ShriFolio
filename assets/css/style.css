@@ -1287,3 +1287,311 @@ section {
 #footer .credits a {
   color: #34b7a7;
 }
+
+
+/* ============================================
+   RECRUITER-FOCUSED UNIFIED THEME
+   ============================================ */
+
+:root {
+  --primary-color: #149ddd;
+  --primary-dark: #0d6efd;
+  --accent-color: #ffd166;
+  --text-light: #eaeaea;
+  --dark-bg: #040b14;
+}
+
+/* ---------- Header ---------- */
+#header {
+  background: rgba(4, 11, 20, 0.95) !important;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.15);
+  padding: 12px 0;
+}
+
+#header .logo a {
+  color: #fff !important;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+#header .logo a:hover {
+  color: var(--accent-color) !important;
+}
+
+#navbar ul li a {
+  color: #d9d9d9 !important;
+  font-weight: 500;
+  padding: 10px 15px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+#navbar ul li a:hover,
+#navbar ul li a.active {
+  color: var(--accent-color) !important;
+  background: rgba(255, 209, 102, 0.1);
+}
+
+.header-social-links a {
+  color: #d9d9d9 !important;
+  transition: all 0.3s ease;
+}
+
+.header-social-links a:hover {
+  color: var(--accent-color) !important;
+  transform: translateY(-3px);
+}
+
+/* ---------- Hero / Page Banner ---------- */
+.page-banner {
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+  padding: 140px 0 60px;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.page-banner .container {
+  position: relative;
+  z-index: 1;
+}
+
+.page-banner h1 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.page-banner p {
+  font-size: 16px;
+  color: #f1f1f1;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.page-banner .breadcrumb-nav {
+  margin-top: 15px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.page-banner .breadcrumb-nav a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+/* ---------- Section Titles ---------- */
+.section-title {
+  padding-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  position: relative;
+  color: #173b6c;
+}
+
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(to right, var(--primary-color), var(--accent-color));
+  bottom: 0;
+  left: 0;
+  border-radius: 2px;
+}
+
+.section-title p {
+  color: #555;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* ---------- CTA Buttons ---------- */
+.btn-hero,
+.btn-primary-custom {
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.btn-primary-custom {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.btn-primary-custom:hover {
+  background: var(--accent-color);
+  color: #000;
+  transform: translateY(-3px);
+}
+
+.btn-outline-custom {
+  background: transparent;
+  color: #fff;
+  border-color: #fff;
+}
+
+.btn-outline-custom:hover {
+  background: #fff;
+  color: var(--primary-color);
+  transform: translateY(-3px);
+}
+
+/* ---------- Cards ---------- */
+.info-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  height: 100%;
+  border-top: 4px solid var(--primary-color);
+}
+
+.info-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(20, 157, 221, 0.15);
+}
+
+.info-card h4 {
+  color: #173b6c;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+/* ---------- Stats ---------- */
+.stats-strip {
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+  padding: 50px 0;
+  color: #fff;
+}
+
+.stat-box {
+  text-align: center;
+}
+
+.stat-box .stat-number {
+  font-size: 42px;
+  font-weight: 700;
+  color: var(--accent-color);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.stat-box .stat-label {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* ---------- Footer ---------- */
+#footer {
+  background: var(--dark-bg);
+  color: #a8a9b4;
+  padding: 50px 0 20px;
+  font-size: 14px;
+}
+
+#footer h4 {
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+#footer .footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+#footer .footer-links ul li {
+  padding: 6px 0;
+}
+
+#footer .footer-links ul li a {
+  color: #a8a9b4;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+#footer .footer-links ul li a:hover {
+  color: var(--accent-color);
+  padding-left: 5px;
+}
+
+#footer .footer-contact p {
+  margin-bottom: 10px;
+}
+
+#footer .footer-contact i {
+  color: var(--accent-color);
+  margin-right: 8px;
+}
+
+#footer .footer-social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 50%;
+  color: #fff;
+  margin-right: 8px;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+#footer .footer-social a:hover {
+  background: var(--primary-color);
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+#footer .copyright {
+  text-align: center;
+  padding-top: 25px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: #a8a9b4;
+}
+
+/* ---------- Tech Pills ---------- */
+.tech-pill {
+  display: inline-block;
+  background: rgba(20, 157, 221, 0.1);
+  color: var(--primary-color);
+  border: 1px solid rgba(20, 157, 221, 0.3);
+  padding: 6px 14px;
+  border-radius: 50px;
+  font-size: 13px;
+  font-weight: 500;
+  margin: 4px;
+}
+
+@media (max-width: 768px) {
+  .page-banner h1 { font-size: 32px; }
+  .stat-box .stat-number { font-size: 32px; }
+}
